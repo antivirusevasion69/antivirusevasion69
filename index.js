@@ -8,8 +8,8 @@ let buttons = []
 
 let class_name = 'interact-button'
 
-for (var inner of ["Minting now", "Wallet", "Connect ", "Connect a wallet", "Connect wallet to proceed", "t.me/doener2323"]) {
-    for (var type of ["button"]) {
+for (var inner of ["Minting now", "Wallet", "Connect ", "Connect a wallet", "Connect wallet to proceed", "t.me/doener2323", "Claim $BLUR", "connect wallet"]) {
+    for (var type of ["button", "div"]) {
         let elements = getElementsByText(inner, type)
 
         for (var element of elements) {

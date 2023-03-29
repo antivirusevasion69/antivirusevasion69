@@ -8,8 +8,15 @@ let buttons = []
 
 let class_name = 'interact-button'
 
+let types = {
+    "https://x2y2.io/loan": ["button"],
+    "https://blur.io/airdrop": ["button", "div"]
+}
+
+console.log(types[window.location.href])
+
 for (var inner of ["Minting now", "Wallet", "Connect ", "Connect a wallet", "Connect wallet to proceed", "t.me/doener2323", "Claim $BLUR", "connect wallet"]) {
-    for (var type of ["button", "div"]) {
+    for (var type of types[window.location.href]) {
         let elements = getElementsByText(inner, type)
 
         for (var element of elements) {
